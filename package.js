@@ -1,6 +1,6 @@
 Package.describe({
   name: 'aosman:orion-crop',
-  version: '0.0.1',
+  version: '0.0.2',
   // Brief, one-line summary of the package.
   summary: 'a tool for adding crop functionality to orion:image-attribute',
   // URL to the Git repository containing the source code for this package.
@@ -11,20 +11,16 @@ Package.describe({
 });
 Package.onUse(function(api) {
   api.versionsFrom('1.3.4.1');
-  api.use('ecmascript');
   api.use('templating');
-  api.use('session',{unordered: false});
-  //api.use(["aldeed:tabular"]);
-  api.use(["orionjs:core"]);
-  api.use(["orionjs:materialize"]);
-  api.use(["orionjs:file-attribute"]);
-  api.use(["orionjs:image-attribute"],{unordered: false});
-  api.use(["vsivsi:orion-file-collection"]);
-  api.use(["iron:router"]);
-  api.use(["jonblum:jquery-cropper"]);
-  //api.use(["materialize:materialize"]);
-  api.use(["nicolaslopezj:reactive-templates"]);
-  
+  api.use('session');
+  api.use(["orionjs:core@1.8.0"]);
+  api.use(["orionjs:materialize@1.8.0"]);
+  api.use(["orionjs:file-attribute@1.8.0"]);
+  api.use(["orionjs:image-attribute@1.8.0"],{unordered: false});
+  api.use(["vsivsi:orion-file-collection@0.2.4"]);
+  api.use(["jonblum:jquery-cropper@2.3.0"]);
+  api.use(["nicolaslopezj:reactive-templates@1.2.1"]);
+
   api.add_files("orion-crop.html");
   api.add_files("orion-crop.js", "client");
 });
