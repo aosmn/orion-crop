@@ -13,5 +13,4 @@ Just add an autoform attribute to your form
 ```js
 {{> afQuickField name='image' label='photo' cropRatio="0"}}
 ```
-```
-cropRatio``` (optional) define aspect ration of the crop area
+'cropRatio' (optional) define aspect ration of the crop area
