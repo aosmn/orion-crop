@@ -15,4 +15,5 @@ Just add an autoform attribute to your form
 ```
 ```js
 cropRatio
-``` (optional) define aspect ration of the crop area
+``` 
+(optional) define aspect ration of the crop area
